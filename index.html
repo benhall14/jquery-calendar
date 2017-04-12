@@ -1,0 +1,238 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>jQuery Calendar By benhall14</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet"> 
+
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+        <link rel="stylesheet" type="text/css" href="calendar.css">
+
+        <script src="jquery.min.js"></script>
+
+        <script type="text/javascript" src="jquery-calendar.js"></script>
+
+        <style>
+            #calendar{
+                max-width: 600px;
+                margin: auto;    
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>jQuery Calendar <span>By benhall14</span></h1>
+        
+        <div class="container">
+
+            <div class="summary">
+            
+                <p>A simple lightweight jQuery plug-in to generate calendars with 8 responsive color schemes to choose from (or use your own style sheet).</p>
+            
+                <p>You can pass events using optional parameters.</p>
+
+                <p><b>File Size: 2.1 KB</b></p>
+            
+            </div>
+            
+            <div id="calendar"></div>
+
+            <div class="text">
+                
+                <p>It's really simple to implement a calendar by adding the HTML element to your page and passing the date parameter in a HTML5 data attribute:</p>
+
+                <pre>&lt;div id="calendar" data-date="2017-01-01"&gt;&lt;/div&gt;</pre>
+                
+                <p>Then defining you calendar in your script tag.</p>
+
+                <pre>$('#calendar').calendar();</pre>
+
+                <p>Optionally, you can pass the date parameter to the function instead of the HTML5 data attribute:</p>
+
+                <pre>&lt;div id="calendar"&gt;&lt;/div&gt;</pre>
+
+                <pre>$('#calendar').calendar({date: '2017-01-01'});</pre>
+
+                <p>You can add the optional parameters by passing a JavaScript object. For example, to generate an 'orange' theme calendar, use the color parameter.</p>
+
+                <pre>$('#calendar').calendar({color: 'orange'});</pre>
+
+                <p>Parameter options:
+
+                    <ul>
+
+                        <li>'date' - The date of the calendar to be instantiated.</li>
+
+                        <li>'color' - One of the available color schemes: yellow, pink, green, orange, purple, blue, turquoise (default) or none.</li>
+
+                        <li>'months' - Override the Month names i.e January, February, March, April, May, June, July, August, September, October, November, December.</li>
+
+                        <li>'days' - Override the day names i.e Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday.</li>
+
+                        <li>'daysMin' - Override the day abbreviation i.e. SUN, MON, TUE, WED, THU, FRI, SAT.</li>
+
+                        <li>'dayLetter' - Override the day letter abbreviation i.e. S, M, T, W, T, F, S.</li>
+
+                        <li>'events' - The formatted array of events.</li>
+
+                    </ul>
+
+                </p>
+
+                <p>The passed event array must be in the following format:</p>
+
+                <pre>var events = [
+    {start: '2017-04-01', end: '2017-04-07', summary: "Example Event", mask: true}, 
+    {start: '2017-04-14', end: '2017-04-20', summary: "Example Event #2", mask: true},
+    {start: '2017-05-05', end: '2017-05-15', summary: "Example Event #3", mask: true}
+];</pre>
+                <p>Each event must have a start date, end date, summary string and a mask boolean. The mask boolean should be true if you want to 'mask'(block off) event dates, or false.</p>
+
+                <p><b>Please make sure you include the calendar.css style sheet in the head of your page, unless you choose to use your own style declarations.</b></p>
+            </div>
+
+            <div class="summary">Examples Integrations</div>
+            
+            <div class="row fix">
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="title">Orange:</div>
+                    
+                    <div id="calendar-1"></div>
+
+                    <hr />
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="title">Purple:</div>
+
+                    <div id="calendar-2"></div>
+
+                    <hr />
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="title">Yellow:</div>
+
+                    <div id="calendar-3"></div>
+
+                    <hr />
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="title">Blue:</div>
+
+                    <div id="calendar-4"></div>
+
+                    <hr />
+
+                </div>
+                
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="title">Green:</div>
+
+                    <div id="calendar-5"></div>
+
+                    <hr />
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="title">Grey:</div>
+
+                    <div id="calendar-6"></div>
+
+                    <hr />
+
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="title">Pink:</div>
+
+                    <div id="calendar-7"></div>
+
+                    <hr />
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                
+                <p>&copy; Copyright Benjamin Hall :: <a href="https://github.com/benhall14/jquery-calendar">https://github.com/benhall14/jquery-calendar</a></p>
+            
+            </div>
+
+        </div>
+
+        <script>
+
+            var events = [{start: '2017-04-01', end: '2017-04-07', summary: "Example Event", mask: true}, {start: '2017-05-05', end: '2017-05-15', summary: "Example Event #3", mask: true}];
+
+            $('#calendar').calendar({'events': events});
+
+            var calendar1 = new Date();
+            calendar1.setMonth(calendar1.getMonth() - 1);
+
+            $('#calendar-1').calendar({color: 'orange', date: calendar1});
+
+            var calendar2 = new Date();
+            calendar2.setMonth(calendar2.getMonth() + 1);
+
+            $('#calendar-2').calendar({color: 'purple', date: calendar2, events: events});
+
+            var calendar3 = new Date();
+            calendar3.setMonth(calendar3.getMonth() + 2);
+            
+            $('#calendar-3').calendar({color: 'yellow', date: calendar3});
+
+            var calendar4 = new Date();
+            calendar4.setMonth(calendar4.getMonth() + 3);
+            
+            $('#calendar-4').calendar({color: 'blue', date: calendar4});
+
+            var calendar5 = new Date();
+            calendar5.setMonth(calendar5.getMonth() + 4);
+            
+            $('#calendar-5').calendar({color: 'green', date: calendar5});
+
+            var calendar6 = new Date();
+            calendar6.setMonth(calendar6.getMonth() + 5);
+            
+            $('#calendar-6').calendar({color: 'grey', date: calendar6});
+
+            var calendar7 = new Date();
+            calendar7.setMonth(calendar7.getMonth() + 5);
+            
+            $('#calendar-7').calendar({color: 'pink', date: calendar7});
+
+
+        </script>
+
+    </body>
+
+</html>
