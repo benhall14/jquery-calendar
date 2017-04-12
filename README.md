@@ -7,12 +7,12 @@ You can pass events using optional parameters.
 Please make sure you have added the the plug-in script include in your page, as well as a copy of jQuery.
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery-calendar.min.js"></script>
+<script type="text/javascript" src="js/jquery-calendar.min.js"></script>
 ```
 
 You should probably also make sure you include the calendar.css stylesheet, unless you are creating your own stylesheet.
 ```html
-<link rel="stylesheet" type="text/css" href="calendar.css">
+<link rel="stylesheet" type="text/css" href="css/calendar.css">
 ```
 
 It's really simple to implement a calendar by adding the HTML element to your page and passing the date parameter in a HTML5 data attribute:
