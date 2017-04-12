@@ -1,5 +1,12 @@
 /*global $, jQuery*/
 
+/*!
+ * jQuery Calendar
+ * https://github.com/benhall14/jquery-calendar
+ *
+ * Copyright Benjamin Hall
+ * Released under the MIT license
+ */
 $.fn.calendar = function (options) {
     "use strict";
 
