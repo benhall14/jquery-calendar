@@ -14,9 +14,7 @@ $.fn.calendar = function (options) {
 
         function daysInMonth(year, month) {
 
-            var feb = (((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0))
-                ? 29
-                : 28;
+            var feb = (((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0)) ? 29 : 28;
 
             var arr = [31, feb, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 

@@ -196,37 +196,44 @@
             $('#calendar').calendar({'events': events});
 
             var calendar1 = new Date();
+            calendar1.setDate(1);
             calendar1.setMonth(calendar1.getMonth() - 1);
 
             $('#calendar-1').calendar({color: 'orange', date: calendar1});
 
             var calendar2 = new Date();
+            calendar2.setDate(1);
             calendar2.setMonth(calendar2.getMonth() + 1);
 
             $('#calendar-2').calendar({color: 'purple', date: calendar2, events: events});
 
             var calendar3 = new Date();
+            calendar3.setDate(1);
             calendar3.setMonth(calendar3.getMonth() + 2);
             
             $('#calendar-3').calendar({color: 'yellow', date: calendar3});
 
             var calendar4 = new Date();
+            calendar4.setDate(1);
             calendar4.setMonth(calendar4.getMonth() + 3);
             
             $('#calendar-4').calendar({color: 'blue', date: calendar4});
 
             var calendar5 = new Date();
+            calendar5.setDate(1);
             calendar5.setMonth(calendar5.getMonth() + 4);
             
             $('#calendar-5').calendar({color: 'green', date: calendar5});
 
             var calendar6 = new Date();
+            calendar6.setDate(1);
             calendar6.setMonth(calendar6.getMonth() + 5);
             
             $('#calendar-6').calendar({color: 'grey', date: calendar6});
 
             var calendar7 = new Date();
-            calendar7.setMonth(calendar7.getMonth() + 5);
+            calendar7.setDate(1);
+            calendar7.setMonth(calendar7.getMonth() + 6);
             
             $('#calendar-7').calendar({color: 'pink', date: calendar7});
 
