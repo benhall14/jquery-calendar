@@ -2,7 +2,7 @@
 A simple ***lightweight (2.1KB)*** jQuery plug-in to generate calendars with 8 responsive color schemes to choose from (or use your own style sheet).
 
 You can pass events using optional parameters.
-            
+
 # Usage
 Please make sure you have added the the plug-in script include in your page, as well as a copy of jQuery.
 ```html
@@ -66,9 +66,9 @@ The passed event array must be in the following format:
 
 ```js
 var events = [
-    {start: '2017-04-01', end: '2017-04-07', summary: "Example Event", mask: true}, 
-    {start: '2017-04-14', end: '2017-04-20', summary: "Example Event #2", mask: true},
-    {start: '2017-05-05', end: '2017-05-15', summary: "Example Event #3", mask: true}
+    {start: '2017/04/01', end: '2017/04/07', summary: "Example Event", mask: true},
+    {start: '2017/04/14', end: '2017/04/20', summary: "Example Event #2", mask: true},
+    {start: '2017/05/05', end: '2017/05/15', summary: "Example Event #3", mask: true}
 ];
 ```
 
