@@ -83,3 +83,8 @@ jQuery 1.11.1+
 Copyright (c) Benjamin Hall, benhall14@hotmail.com
 
 Licensed under the MIT license
+
+# Donate?
+If you find this project helpful or useful in anyway, please consider getting me a cup of coffee - It's really appreciated :)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/benhall14)
