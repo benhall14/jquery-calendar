@@ -10,6 +10,13 @@ Please make sure you have added the the plug-in script include in your page, as 
 <script type="text/javascript" src="js/calendar.min.js"></script>
 ```
 
+**Monday Starting Day** - The default behaviour of the calendar is to start each week on **SUNDAY**. Using a separate JS file for different starting days allows me to keep the file size as small as possible. If you prefer the calendar to use Monday as the starting day, use the included ***js/calendar-starting-monday.min.js*** instead. For example:
+
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/calendar-starting-monday.min.js"></script>
+```
+
 You should probably also make sure you include the calendar.css stylesheet, unless you are creating your own stylesheet.
 ```html
 <link rel="stylesheet" type="text/css" href="css/calendar.css">
