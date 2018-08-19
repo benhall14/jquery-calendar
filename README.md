@@ -1,5 +1,5 @@
 # jQuery Calendar
-A simple ***lightweight (2.1KB)*** jQuery plug-in to generate calendars with 8 responsive color schemes to choose from (or use your own style sheet).
+A simple ***lightweight (2.1KB)*** jQuery plug-in to generate calendars with 8 responsive colour schemes to choose from (or use your own style sheet).
 
 You can pass events using optional parameters.
 
@@ -87,7 +87,8 @@ Each event must have a start date, end date, summary string and a mask boolean. 
 jQuery 1.11.1+
 
 # License
-Copyright (c) Benjamin Hall, benhall14@hotmail.com
+Copyright (c) Benjamin Hall, ben@conobe.co.uk
+https://conobe.co.uk
 
 Licensed under the MIT license
 
